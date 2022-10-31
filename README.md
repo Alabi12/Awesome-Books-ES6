@@ -6,7 +6,7 @@
 
 - Html
 - Css
-- JavaScript
+- JavaScript ES 6 Module
 
 ## Live Demo (if available)
 
