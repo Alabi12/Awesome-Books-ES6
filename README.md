@@ -1,5 +1,4 @@
 # Awesome-Books-ES6
-# Awesome Books
 
 > This is a simple project that allow the user to added and/or remove books from a list. The data is persisted in the local storage.
 
@@ -11,7 +10,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://serengia.github.io/awesome-books/)
+[Live Demo Link](https://alabi12.github.io/Awesome-Books-ES6/)
 
 ## Getting Started
 
