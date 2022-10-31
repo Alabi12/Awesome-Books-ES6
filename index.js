@@ -1,6 +1,6 @@
-import Books from "./module/Books.js";
-import dynamicSection from "./module/dynamicSection.js";
-import { DateTime } from "./module/luxon.js";
+import Books from './module/Books.js';
+import dynamicSection from './module/dynamicSection.js';
+import { DateTime } from './module/luxon.js';
 
 const books = new Books();
 
@@ -11,7 +11,7 @@ books.removeBook();
 
 dynamicSection();
 
-const dt = document.querySelector(".display-date");
+const dt = document.querySelector('.display-date');
 const updateTime = () => {
   const now = DateTime.now();
   dt.innerHTML = now.toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);

@@ -1,20 +1,20 @@
 const dynamicSection = () => {
-  const navLinks = document.querySelector(".nav-links");
-  const allSections = document.querySelectorAll("section");
+  const navLinks = document.querySelector('.nav-links');
+  const allSections = document.querySelectorAll('section');
 
-  navLinks.addEventListener("click", (e) => {
+  navLinks.addEventListener('click', (e) => {
     e.preventDefault();
-    const clickedLink = e.target.closest(".nav-link a");
+    const clickedLink = e.target.closest('.nav-link a');
     if (!clickedLink) return;
 
-    const id = clickedLink.getAttribute("href").replace("#", "");
+    const id = clickedLink.getAttribute('href').replace('#', '');
 
     [...allSections].forEach((sec) => {
-      sec.classList.add("hide");
+      sec.classList.add('hide');
     });
 
     const elementToShow = document.getElementById(id);
-    elementToShow.classList.remove("hide");
+    elementToShow.classList.remove('hide');
   });
 };
 
