@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Awesome Books</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="row">
+        <nav class="nav nabar">
+          <span class="logo">Awesome Books</span>
+          <ul class="nav-links">
+            <li class="nav-link">
+              <a href="#list"
+                ><i class="nav-list-icon fa-solid fa-book-open-reader"></i
+                >List</a
+              >
+            </li>
+            <li class="nav-link">
+              <a href="#addnew"
+                ><i class="nav-list-icon fa-solid fa-plus"></i>Add New</a
+              >
+            </li>
+            <li class="nav-link">
+              <a href="#contact"
+                ><i class="nav-list-icon fa-regular fa-address-card"></i>
+                Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="date">
+          <p class="display-date"></p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="list" class="collection-section">
+        <div class="collection-container row">
+          <h1>All Awesome Books</h1>
+          <ul class="books-list"></ul>
+        </div>
+      </section>
+      <section id="addnew" class="form-section hide">
+        <div class="form-container row">
+          <hr class="divider" />
+          <h2>Add a new book</h2>
+          <form class="form">
+            <input
+              aria-label="Author Title"
+              type="text"
+              placeholder="Title"
+              name="title"
+            />
+            <input
+              aria-label="Author Input"
+              type="text"
+              placeholder="Author"
+              name="author"
+            />
+            <button type="submit" class="btn btn-add">Add</button>
+          </form>
+        </div>
+      </section>
+      <section id="contact" class="contact-section hide">
+        <div class="row contact-container">
+          <div class="description">
+            <h1>Contact Information</h1>
+            <p>Do you have any question or you just want to say "hello"?</p>
+            <p>You can reach out to us through;</p>
+          </div>
+          <ul>
+            <li>info@awesomebooks.com</li>
+            <li>Tel: +233-409-93320</li>
+            <li>Accra-Ghana</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container row">
+        <p>Copyright &copy;2022 Awesome Books</p>
+      </div>
+    </footer>
+
+    <script type="module" src="index.js"></script>
+    <script src="luxon.js"></script>
+  </body>
+</html>

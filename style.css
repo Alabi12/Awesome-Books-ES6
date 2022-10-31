@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #333;
+  padding: 30px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.row {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 10px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  border: 2px solid #333;
+  padding: 20px;
+}
+
+.date {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.display-date {
+  margin-top: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: auto;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a:link,
+.nav-links a:visited {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+  transition: all 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: #0a66c2;
+}
+
+.nav-list-icon {
+  margin-right: 4px;
+  font-size: 18px;
+}
+
+section {
+  padding: 40px 20px;
+  min-height: 400px;
+}
+
+.books-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+}
+
+.books-list li:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.books-list,
+.form {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.books-list {
+  border: 2px solid #ddd;
+  list-style: none;
+  max-width: 500px;
+}
+
+.btn-remove {
+  margin-left: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  max-width: 400px;
+}
+
+input {
+  padding: 6px;
+}
+
+.btn {
+  padding: 2px 8px;
+  cursor: pointer;
+}
+
+.btn-add {
+  align-self: flex-end;
+  padding: 6px 30px;
+}
+
+.divider {
+  height: 4px;
+  width: 100px;
+  background-color: #ddd;
+  border: none;
+  margin: 30px auto;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-container {
+  border: 2px solid #333;
+  padding: 20px;
+}
+
+.hide {
+  display: none;
+}
